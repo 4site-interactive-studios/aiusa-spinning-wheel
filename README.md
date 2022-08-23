@@ -1,4 +1,4 @@
-# Engaging Networks Delicious Amount Range Slider - Embed
+# AIUSA Spinning Wheel Lightbox
 
 A Spinning Wheel Lightbox for Amnesty International
 
