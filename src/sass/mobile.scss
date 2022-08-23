@@ -1,0 +1,63 @@
+@media (max-width: 850px), (max-device-width: 850px) {
+  & {
+    margin: 0 auto;
+    .aiusa-spinning-wheel {
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      &__container {
+        border-radius: 0;
+        display: block;
+        min-height: 100%;
+        margin-bottom: 0;
+        overflow: hidden;
+        .aiusa-spinning-wheel__content {
+          h1,
+          p {
+            text-align: center;
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          .aiusa-spinning-wheel__logo {
+            position: absolute;
+            top: 0;
+            margin-top: 0;
+          }
+          .aiusa-spinning-wheel__buttons {
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+        .close {
+          backdrop-filter: blur(14px);
+          background-color: rgba(255, 255, 255, 0.25);
+          border-top-right-radius: 0;
+        }
+      }
+      .aiusa-spinning-wheel__wheel {
+        min-height: 40vh;
+        width: 100%;
+        padding-right: 0;
+        border-radius: 0;
+        svg {
+          &#svgWheel {
+            top: auto;
+            right: inherit;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+          &#wheel-indicator {
+            transform: rotate(90deg) translateY(50%);
+            bottom: 15px;
+            right: initial;
+            left: calc(50% - 15px);
+            top: initial;
+          }
+        }
+      }
+    }
+  }
+}

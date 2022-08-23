@@ -1,0 +1,7 @@
+@import "animations.scss";
+@import "mixins.scss";
+@import "colors.scss";
+.aiusa-spinning-wheel-wrapper {
+  @import "desktop.scss";
+  @import "mobile.scss";
+}

@@ -1,0 +1,19 @@
+$bg: #fff;
+$txt: #000;
+$form-txt: #aaaaaa;
+$thumb: #ffb800;
+$thumb-hover: darken($thumb, 10%);
+$thumb-active: darken($bg, 10%);
+$spin-button: #000;
+$spin-button-text: #fff;
+$donate-button: #ffff00;
+$donate-button-text: #000;
+.aiusa-spinning-wheel-wrapper {
+  --aiusa-spinning-wheel-color-bg: #{$bg};
+  --aiusa-spinning-wheel-color-txt: #{$txt};
+  --aiusa-spinning-wheel-color-form-txt: #{$form-txt};
+  --aiusa-spinning-wheel-color-spin-button: #{$spin-button};
+  --aiusa-spinning-wheel-color-spin-button-text: #{$spin-button-text};
+  --aiusa-spinning-wheel-color-donate-button: #{$donate-button};
+  --aiusa-spinning-wheel-color-donate-button-text: #{$donate-button-text};
+}

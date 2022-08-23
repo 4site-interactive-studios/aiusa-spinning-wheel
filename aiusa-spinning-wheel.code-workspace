@@ -1,0 +1,17 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../engrid-aiusa"
+	},
+	{
+		"path": "../engrid-standalone-lightbox"
+	},
+	{
+		"path": "../en-range-slider"
+	}
+],
+  "settings": {}
+}

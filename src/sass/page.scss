@@ -1,0 +1,22 @@
+// Styles that goes to the main page
+@font-face {
+  font-family: "AmnestyTradeGothicBdCn";
+  src: local("AmnestyTradeGothic-BdCn20.woff"),
+    url("https://c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1839/AmnestyTradeGothic-BdCn20.woff")
+      format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AmnestyTradeGothic";
+  src: local("AmnestyTradeGothic"),
+    url("https://c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1839/AmnestyTradeGothic.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.has-aiusa-spinning-wheel {
+  overflow: hidden !important;
+}
