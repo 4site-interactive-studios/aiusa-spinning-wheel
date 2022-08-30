@@ -103,14 +103,19 @@ p {
       position: relative;
       border-bottom-left-radius: 12px;
       border-top-left-radius: 12px;
+      #the-wheel {
+        width: 996px;
+        height: 976px;
+        position: absolute;
+        right: 125px;
+        top: -210px;
+        transform-origin: 50% 50%;
+        svg {
+          position: absolute;
+        }
+      }
       svg {
         position: absolute;
-        &#svgWheel {
-          transform: rotate(0deg);
-          transition: transform 0.5s ease-in-out;
-          right: 120px;
-          top: -210px;
-        }
         &#wheel-indicator {
           transition: transform 0.5s ease-in-out;
           right: 60px;

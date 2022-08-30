@@ -119,7 +119,9 @@ export class SpinningWheel extends HTMLElement {
         <a href="#" class="close"></a>
         <div class="aiusa-spinning-wheel__wheel">
           ${indicator}
-          ${svgWheel}
+          <div id="the-wheel">
+            ${svgWheel}
+          </div>
         </div>
         <div class="aiusa-spinning-wheel__content">
           <img src="${this.options.logo}" alt="AIUSA Spinning Wheel" class="aiusa-spinning-wheel__logo" />
@@ -183,7 +185,7 @@ export class SpinningWheel extends HTMLElement {
       ),
     ];
 
-    const wheel = this.wrapper.querySelector(".wheel-image") as HTMLElement;
+    const wheel = this.wrapper.querySelector("#the-wheel") as HTMLElement;
     const screenWidth = window.innerWidth;
     const angleOffset = screenWidth <= 850 ? screenWidth : 1000;
     // const current = this.wrapper?.querySelector(".current");

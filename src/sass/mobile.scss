@@ -20,6 +20,13 @@
             margin-left: auto;
             margin-right: auto;
           }
+          h1 {
+            font-size: 48px;
+          }
+          p {
+            font-size: 16px;
+            line-height: 1.5;
+          }
           .aiusa-spinning-wheel__logo {
             position: absolute;
             top: 0;
@@ -37,18 +44,25 @@
         }
       }
       .aiusa-spinning-wheel__wheel {
-        min-height: 40vh;
+        min-height: 44vh;
         width: 100%;
         padding-right: 0;
         border-radius: 0;
-        svg {
-          &#svgWheel {
-            top: auto;
-            right: inherit;
-            bottom: 50px;
-            left: 50%;
-            transform: translateX(-50%);
+        #the-wheel {
+          width: 680px;
+          height: 710px;
+          position: absolute;
+          right: inherit;
+          bottom: 50px;
+          left: 50%;
+          top: inherit;
+          transform: translateX(-50%);
+          transform-origin: 50% 50%;
+          svg {
+            position: absolute;
           }
+        }
+        svg {
           &#wheel-indicator {
             transform: rotate(90deg) translateY(50%);
             bottom: 15px;
