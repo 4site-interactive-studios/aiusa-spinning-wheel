@@ -171,7 +171,8 @@ p {
             transform: translateY(100%);
             opacity: 0;
             overflow: hidden;
-            &:hover {
+            &:hover,
+            &.active {
               background-color: var(--aiusa-spinning-wheel-color-spin-button);
               color: var(--aiusa-spinning-wheel-color-spin-button-text);
               .candle {

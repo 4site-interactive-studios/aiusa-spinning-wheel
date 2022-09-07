@@ -237,6 +237,14 @@ export class SpinningWheel extends HTMLElement {
           buttonContainer.classList.remove("spinning");
           buttonContainer.classList.add("donate");
           console.log(this.pieces[selectedIndex]);
+          setTimeout(() => {
+            const donateButton = this.wrapper.querySelector(
+              ".aiusa-spinning-wheel__donate-button"
+            );
+            if (donateButton) {
+              donateButton.classList.add("active");
+            }
+          }, 300);
         },
         onUpdate: () => {
           //recalculate tolerance
