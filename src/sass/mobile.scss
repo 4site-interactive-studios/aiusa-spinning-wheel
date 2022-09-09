@@ -31,6 +31,7 @@
             position: absolute;
             top: 0;
             margin-top: 0;
+            z-index: 3;
           }
           .aiusa-spinning-wheel__buttons {
             margin-left: auto;
@@ -48,6 +49,31 @@
         width: 100%;
         padding-right: 0;
         border-radius: 0;
+        &::before {
+          content: "";
+          background-image: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1839/mobile-rim.jpg");
+          width: 800px;
+          height: 800px;
+          position: absolute;
+          top: -493px;
+          left: 50%;
+          transform: translateX(-50%);
+          background-position: center bottom;
+          background-size: contain;
+        }
+        &::after {
+          content: "";
+          background-image: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1839/mobile-hub.png");
+          width: 278px;
+          height: 278px;
+          position: absolute;
+          z-index: 1;
+          top: -230px;
+          left: 50%;
+          transform: translateX(-50%);
+          background-position: center bottom;
+          background-size: contain;
+        }
         #the-wheel {
           width: 680px;
           height: 710px;
