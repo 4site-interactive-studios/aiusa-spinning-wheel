@@ -290,7 +290,7 @@ export class SpinningWheel extends HTMLElement {
   }
   private close(e: Event) {
     e.preventDefault();
-    this.createCookie(); // Create one day cookie
+    this.createCookie();
     this.wrapper.classList.add("is-hidden");
     document.body.classList.remove("has-aiusa-spinning-wheel");
   }
@@ -299,6 +299,7 @@ export class SpinningWheel extends HTMLElement {
     if (!cookie) {
       this.wrapper.classList.remove("is-hidden");
       document.body.classList.add("has-aiusa-spinning-wheel");
+      this.createCookie();
     }
   }
   private createCookie() {
