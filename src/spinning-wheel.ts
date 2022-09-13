@@ -20,6 +20,11 @@ export class SpinningWheel extends HTMLElement {
     // Create a random debug color
     this.debugColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
     this.log("AIUSA Spinning Wheel: Debug mode is on");
+    const cookie = this.readCookie();
+    if (cookie) {
+      this.log("Cookie found, not rendering");
+      return;
+    }
     // If there's no HREF, throw an error
     if (!this.href) {
       throw new Error("AIUSA Spinning Wheel: No HREF provided");
@@ -43,12 +48,10 @@ export class SpinningWheel extends HTMLElement {
     }, 1500);
   }
 
-  private isDebug() {
+  private isDebug(): boolean {
     const regex = new RegExp("[\\?&]debug=true");
     const results = regex.exec(location.search);
-    return results === null
-      ? ""
-      : decodeURIComponent(results[1].replace(/\+/g, " "));
+    return results === null ? false : true;
   }
 
   private log(message: string | number) {
@@ -295,12 +298,9 @@ export class SpinningWheel extends HTMLElement {
     document.body.classList.remove("has-aiusa-spinning-wheel");
   }
   private open() {
-    const cookie = this.readCookie();
-    if (!cookie) {
-      this.wrapper.classList.remove("is-hidden");
-      document.body.classList.add("has-aiusa-spinning-wheel");
-      this.createCookie();
-    }
+    this.wrapper.classList.remove("is-hidden");
+    document.body.classList.add("has-aiusa-spinning-wheel");
+    this.createCookie();
   }
   private createCookie() {
     const date = new Date();
