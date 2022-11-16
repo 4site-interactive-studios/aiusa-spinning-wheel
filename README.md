@@ -37,7 +37,8 @@ Every option can be set as a data attribute on the `spinnning-wheel` tag.
 - **title**: The title of the lightbox. If not specified, we will use "GIVING TUESDAY SURPRISE OFFER".
 - **paragraph**: The paragraph of the lightbox. If not specified, we will use "Help protect human rights around the world: Unlock a special matching offer this Giving Tuesday by spinning the wheel!".
 - **spinButtonLabel**: The label of the spin button. If not specified, we will use "SPIN!".
-- **donateButtonLabel**: The label of the donate button. If not specified, we will use "DONATE WITH 10X MATCH!".
+- **donateButtonLabel**: The label of the donate button. If not specified, we will use "DONATE WITH 3X MATCH!".
+- **cookie**: Whether to use a cookie to prevent the lightbox from showing up again. If not specified, we will use `true`.
 
 **Example of the `spinnning-wheel` tag with all options set:**
 
@@ -49,7 +50,7 @@ Every option can be set as a data attribute on the `spinnning-wheel` tag.
   data-title="This is my Test Title"
   data-paragraph="This is my Test Paragraph"
   data-spin-button-label="RUN!"
-  data-donate-button-label="GIVE WITH 10X MATCH!"
+  data-donate-button-label="GIVE WITH 3X MATCH!"
 />
 ```
 
