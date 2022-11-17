@@ -55,7 +55,8 @@
           width: 800px;
           height: 800px;
           position: absolute;
-          top: -493px;
+          top: inherit;
+          bottom: 15px;
           left: 50%;
           transform: translateX(-50%);
           background-position: center bottom;
